@@ -1,8 +1,19 @@
-function QuoteContent({ text, author }) {
+function QuoteContent({ text, author, color }) {
 	return (
-		<div>
-			<span id='text'>{text}</span>
-			<span id='author'>-{author}</span>
+		<div id='content'>
+			<span
+				id='text'
+				style={{ color: color }}
+			>
+				{text}
+			</span>
+			<span
+				id='author'
+				className='text-end'
+				style={{ color: color }}
+			>
+				-{author}
+			</span>
 		</div>
 	);
 }

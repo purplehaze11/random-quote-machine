@@ -1,1 +1,27 @@
 @import 'bootstrap/scss/bootstrap';
+
+#quote-box {
+	max-width: 700px;
+	height: 300px;
+	padding: 30px 20px;
+	span {
+		display: block;
+	}
+
+	#text {
+		font-size: 30px;
+		text-align: justify;
+	}
+
+	#author {
+		font-size: 20px;
+	}
+
+	#button-group {
+		color: white;
+		button,
+		a {
+			border: unset;
+		}
+	}
+}
